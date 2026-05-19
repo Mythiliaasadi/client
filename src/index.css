@@ -1,53 +1,40 @@
-body {
-  margin: 0;
-  font-family: Arial;
-  background: hsl(218, 52%, 61%);
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* DEFAULT TEXT */
+body{
+font-family:Poppins;
 }
 
-.container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* MAIN APP TITLE (HealSync everywhere) */
+.app-title{
+font-family:Cinzel, serif;
+font-size:40px;
+font-weight:700;
+letter-spacing:3px;
 }
 
-.form {
-  width: 300px;
-  padding: 30px;
-  background: rgb(224, 32, 32);
-  display: flex;
-  flex-direction: column;
-  border-radius: 20px;
+/* SECTION HEADINGS */
+.section-title{
+font-size:24px;
+font-weight:600;
 }
 
-.form input {
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 20px;
+/* SMALL SUB TEXT */
+.sub-text{
+font-size:14px;
+color:#6b7280;
 }
 
-.form button {
-  padding: 10px;
-  background: blue;
-  color: white;
-  border-radius: 20px;
-}
-.password-box {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
-  color: #63dbdb;
+/* LABEL TEXT */
+.label{
+font-size:13px;
+font-weight:500;
+letter-spacing:1px;
+text-transform:uppercase;
 }
 
-.password-box input {
-  flex: 1;
-}
-
-.show-btn {
-  padding: 10px;
-  background: rgb(125, 203, 16);
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 20px;
+/* BIG NUMBERS (cards like OP, Queue) */
+.big-number{
+font-size:42px;
+font-weight:700;
 }

@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+--primary:#1565c0;
+--bg:#f6f9ff;
+--card:#ffffff;
+--text:#1f2937;
+--muted:#6b7280;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+margin:0;
+padding:0;
+background:var(--bg);
+font-family:Poppins;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+padding:40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: rgb(212, 21, 21);
+.card{
+background:white;
+border-radius:18px;
+padding:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.06);
 }
 
-.App-link {
-  color: #2a92af;
+.btn{
+background:var(--primary);
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:12px;
+cursor:pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover{
+opacity:0.9;
+}
+
+.title{
+font-family:Cinzel,serif;
+font-size:34px;
+color:var(--primary);
+}
+
+.subtitle{
+color:var(--muted);
+font-size:14px;
 }

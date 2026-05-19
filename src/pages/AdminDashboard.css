@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#f4f6fb;
+}
+
+/* MAIN */
+.admin{
+padding:25px;
+}
+
+/* HEADER */
+.admin-header{
+text-align:center;
+margin-bottom:20px;
+}
+
+.admin-header h1{
+color:#1e3a8a;
+}
+
+.admin-header p{
+font-size:13px;
+color:#64748b;
+}
+
+/* STATS */
+.stats{
+display:flex;
+gap:15px;
+margin-bottom:20px;
+}
+
+.stat{
+flex:1;
+background:white;
+padding:15px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+.stat h2{
+color:#1e3a8a;
+}
+
+/* LIST */
+.list{
+display:flex;
+flex-direction:column;
+gap:12px;
+}
+
+/* CARD */
+.card{
+background:white;
+padding:15px;
+border-radius:12px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* INFO */
+.info h3{
+margin:0;
+color:#0f172a;
+}
+
+.info p{
+font-size:13px;
+color:#64748b;
+}
+
+/* STATUS */
+.status{
+display:inline-block;
+margin-top:5px;
+padding:4px 10px;
+border-radius:8px;
+font-size:12px;
+}
+
+.status.Waiting{
+background:#fef9c3;
+color:#ca8a04;
+}
+
+.status.InQueue{
+background:#dbeafe;
+color:#2563eb;
+}
+
+/* BUTTONS */
+.actions{
+display:flex;
+gap:8px;
+}
+
+.btn-green{
+background:#22c55e;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.btn-red{
+background:#ef4444;
+color:white;
+border:none;
+padding:6px 10px;
+border-radius:8px;
+cursor:pointer;
+}

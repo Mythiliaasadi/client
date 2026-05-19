@@ -1,95 +1,102 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f2f5f9;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
 }
 
-.login-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(
-    to right,
-    #4facfe,
-    #00f2fe
-  );
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#f1f5f9,#e2e8f0);
 }
 
-.login-box {
-  background: rgb(235, 130, 130);
-  padding: 40px;
-  width: 300px;
-  border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-  text-align: center;
+/* MAIN CARD */
+.login-box{
+width:380px;
+padding:40px;
+background:white;
+border-radius:18px;
+box-shadow:0 15px 40px rgba(0,0,0,0.10);
+text-align:center;
 }
 
-.login-box h1 {
-  color: #0077ff;
-  margin-bottom: 10px;
+/* BRAND TITLE */
+.login-title{
+font-family:Cinzel, serif;
+font-size:40px;
+font-weight:700;
+letter-spacing:3px;
+color:#1e3a8a;
+margin-bottom:6px;
 }
 
-.login-box h2 {
-  margin-bottom: 25px;
+/* SUBTITLE */
+.login-subtitle{
+font-size:13px;
+color:#64748b;
+margin-bottom:18px;
 }
 
-.login-box form {
-  display: flex;
-  flex-direction: column;
+/* HEADING */
+.login-heading{
+font-size:16px;
+color:#1e293b;
+margin-bottom:18px;
+font-weight:500;
 }
 
-.login-box input {
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 16px;
+/* INPUTS */
+.login-input{
+width:100%;
+height:46px;
+margin-bottom:12px;
+padding:10px 12px;
+border:1px solid #e2e8f0;
+border-radius:10px;
+outline:none;
+font-size:14px;
+transition:0.2s;
 }
 
-.login-box button {
-  padding: 12px;
-  background: #0077ff;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
+.login-input:focus{
+border-color:#1e3a8a;
+box-shadow:0 0 0 3px rgba(30,58,138,0.12);
 }
 
-.login-box button:hover {
-  background: #005fd1;
+/* BUTTON */
+.login-btn{
+width:100%;
+height:46px;
+border:none;
+border-radius:10px;
+background:#1e3a8a;
+color:white;
+font-size:15px;
+font-weight:500;
+cursor:pointer;
+margin-top:6px;
+transition:0.2s;
 }
 
-.login-box p {
-  margin-top: 20px;
+.login-btn:hover{
+background:#0f2a6b;
 }
 
-.login-box a {
-  color: #0077ff;
-  text-decoration: none;
-  font-weight: bold;
-}
-.popup-title {
-  color: #0077ff;
-  font-size: 32px;
-  margin-bottom: 20px;
-  animation: popup 1s ease;
+/* ERROR */
+.login-error{
+color:red;
+font-size:13px;
+margin-bottom:10px;
 }
 
-/* Popup Animation */
-@keyframes popup {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-
-  70% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-  100% {
-    transform: scale(1);
-  }
+/* FOOTER */
+.login-footer{
+margin-top:14px;
+font-size:12px;
+color:#94a3b8;
 }
